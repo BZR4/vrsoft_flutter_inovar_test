@@ -1,0 +1,152 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:8065523260670356841",
+      "lastPropertyId": "3:2930307136848990727",
+      "name": "User",
+      "properties": [
+        {
+          "id": "1:6825483601247716039",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2790353629296227908",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:2930307136848990727",
+          "name": "date",
+          "type": 10
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:2243833519229211509",
+      "lastPropertyId": "2:7209539000418629986",
+      "name": "Customer",
+      "properties": [
+        {
+          "id": "1:8401990026814681617",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7209539000418629986",
+          "name": "name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:8321449215676790169",
+      "lastPropertyId": "3:5741908930822365397",
+      "name": "ShopOrder",
+      "properties": [
+        {
+          "id": "1:7979423741325606120",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4247274544854639010",
+          "name": "price",
+          "type": 6
+        },
+        {
+          "id": "3:5741908930822365397",
+          "name": "customerId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:4872098119267584806",
+          "relationTarget": "Customer"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:6780618282305653600",
+      "lastPropertyId": "3:1192022557620829718",
+      "name": "Aluno",
+      "properties": [
+        {
+          "id": "1:6151201747563405049",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:894793285348396673",
+          "name": "nome",
+          "type": 9
+        }
+      ],
+      "relations": [
+        {
+          "id": "3:1528934981337461978",
+          "name": "cursos",
+          "targetId": "5:5664174551536185749"
+        }
+      ]
+    },
+    {
+      "id": "5:5664174551536185749",
+      "lastPropertyId": "4:2792508266882323261",
+      "name": "Curso",
+      "properties": [
+        {
+          "id": "1:2213534200169598695",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6277407680548101750",
+          "name": "descricao",
+          "type": 9
+        },
+        {
+          "id": "3:1351191747815397165",
+          "name": "ementa",
+          "type": 9
+        }
+      ],
+      "relations": [
+        {
+          "id": "4:4900099418623958611",
+          "name": "alunos",
+          "targetId": "4:6780618282305653600"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "5:5664174551536185749",
+  "lastIndexId": "3:295359575442703549",
+  "lastRelationId": "4:4900099418623958611",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [
+    4186448477475805397,
+    295359575442703549
+  ],
+  "retiredPropertyUids": [
+    2792508266882323261,
+    1192022557620829718
+  ],
+  "retiredRelationUids": [
+    4082876253422871273,
+    9022239115287382316
+  ],
+  "version": 1
+}
